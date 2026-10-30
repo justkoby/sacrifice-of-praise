@@ -1,0 +1,45 @@
+:root { color-scheme: dark; }
+* { box-sizing: border-box; }
+html, body { margin: 0; background: #17140f; font-family: 'Segoe UI', system-ui, sans-serif; overflow: hidden; }
+.app { display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh; gap: 10px; }
+.app.render { display: block; height: auto; }
+.viewport { position: relative; overflow: hidden; box-shadow: 0 10px 60px rgba(0, 0, 0, .55); }
+.render .viewport { box-shadow: none; }
+
+/* ── composition ───────────────────────────────────────── */
+.stage { position: relative; overflow: hidden; background: #fff; isolation: isolate; }
+.camera { position: absolute; inset: 0; transform-origin: 50% 50%; }
+.layer { position: absolute; pointer-events: none; user-select: none; }
+.inner { position: absolute; inset: 0; }
+.inner img { display: block; }
+.slice { position: absolute; }
+.slice img { position: absolute; max-width: none; }
+.particles { position: absolute; left: 0; top: 0; pointer-events: none; }
+img { -webkit-user-drag: none; }
+
+/* warm backdrop light sweep (extra effect – procedural, not a substitute asset) */
+.ambient { position: absolute; left: 0; top: 0; width: 820px; height: 1350px; pointer-events: none; mix-blend-mode: multiply;
+  background: linear-gradient(100deg, transparent 10%, rgba(226, 184, 98, .16) 38%, rgba(246, 214, 140, .30) 52%, rgba(226, 184, 98, .12) 66%, transparent 90%); }
+
+/* reflective shimmer, masked to the layer's own pixels */
+.shine { position: absolute; inset: 0; overflow: hidden; pointer-events: none; mix-blend-mode: overlay; mask-size: 100% 100%; -webkit-mask-size: 100% 100%; }
+.shine .band { position: absolute; top: -10%; bottom: -10%; left: 0; width: 34%; opacity: 0;
+  background: linear-gradient(100deg, rgba(255, 250, 230, 0) 0%, rgba(255, 248, 220, .55) 30%, #fffdf2 50%, rgba(255, 248, 220, .55) 70%, rgba(255, 250, 230, 0) 100%); }
+
+/* lens glint */
+.glint { position: absolute; pointer-events: none; opacity: 0; }
+.glint i { position: absolute; display: block; }
+.g-h { left: 0; right: 0; top: 50%; height: 3px; margin-top: -1.5px; background: linear-gradient(90deg, transparent, rgba(255, 247, 214, .95) 50%, transparent); }
+.g-v { top: 0; bottom: 0; left: 50%; width: 3px; margin-left: -1.5px; background: linear-gradient(180deg, transparent, rgba(255, 247, 214, .95) 50%, transparent); }
+.g-d { left: 22%; right: 22%; top: 50%; height: 2px; margin-top: -1px; transform: rotate(45deg); background: linear-gradient(90deg, transparent, rgba(255, 240, 190, .8) 50%, transparent); box-shadow: 0 0 0 0 transparent; }
+.g-core { left: 38%; right: 38%; top: 38%; bottom: 38%; border-radius: 50%; background: radial-gradient(circle, #fff 0%, rgba(255, 246, 210, .92) 28%, rgba(244, 206, 120, 0) 72%); }
+
+/* ── controls ──────────────────────────────────────────── */
+.controls { display: flex; align-items: center; gap: 10px; width: min(900px, 94vw); height: 44px; color: #e9dcc0; }
+.controls button { background: #2b251a; color: #f1e3bd; border: 1px solid #5b4a22; border-radius: 6px; padding: 6px 12px; cursor: pointer; font-size: 14px; }
+.controls button:hover { background: #3a3122; }
+.controls input[type=range] { flex: 1; accent-color: #c9a24a; }
+.time { font-variant-numeric: tabular-nums; font-size: 13px; min-width: 110px; text-align: right; }
+.bigplay { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); background: rgba(24, 20, 12, .78); color: #f6e7b8; border: 1px solid #c9a24a;
+  border-radius: 40px; padding: 14px 26px; font-size: 22px; cursor: pointer; backdrop-filter: blur(4px); }
+.bigplay span { font-size: 15px; margin-left: 8px; letter-spacing: .04em; }

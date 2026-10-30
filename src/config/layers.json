@@ -1,0 +1,614 @@
+[
+ {
+  "id": "bg-base",
+  "source": "poster_0051_Background.png",
+  "file": "assets/bg-base.png",
+  "x": 0,
+  "y": 0,
+  "w": 1080,
+  "h": 1350,
+  "blend": "normal",
+  "role": "background",
+  "depth": -1.0,
+  "description": "Opaque white base",
+  "mode": "RGB",
+  "alpha": [
+   255,
+   255
+  ]
+ },
+ {
+  "id": "bg-silk",
+  "source": "poster_0050_Layer-14.png",
+  "file": "assets/bg-silk.png",
+  "x": 0,
+  "y": 0,
+  "w": 1080,
+  "h": 1350,
+  "blend": "multiply",
+  "role": "background",
+  "depth": -0.9,
+  "description": "Soft silk/fold texture (Multiply)",
+  "mode": "RGBA",
+  "alpha": [
+   215,
+   255
+  ]
+ },
+ {
+  "id": "bg-facets",
+  "source": "poster_0049_Layer-25.png",
+  "file": "assets/bg-facets.png",
+  "x": 0,
+  "y": 0,
+  "w": 1080,
+  "h": 1350,
+  "blend": "normal",
+  "role": "background",
+  "depth": -0.8,
+  "description": "Faceted white polygon texture",
+  "mode": "RGBA",
+  "alpha": [
+   195,
+   255
+  ]
+ },
+ {
+  "id": "bg-tint",
+  "source": "poster_0048_Color-Fill-1.png",
+  "file": "assets/bg-tint.png",
+  "x": 0,
+  "y": 0,
+  "w": 1080,
+  "h": 1350,
+  "blend": "multiply",
+  "role": "background",
+  "depth": -0.8,
+  "description": "Flat light-grey tint (Multiply)",
+  "mode": "RGB",
+  "alpha": [
+   255,
+   255
+  ]
+ },
+ {
+  "id": "ornament-v-main",
+  "source": "poster_0047_Layer-21.png",
+  "file": "assets/ornament-v-main.png",
+  "x": 97,
+  "y": 280,
+  "w": 867,
+  "h": 718,
+  "blend": "normal",
+  "role": "ornament",
+  "depth": -0.6,
+  "description": "Large gold geometric \"V\" (Adinkra-style pattern), rear",
+  "mode": "RGBA",
+  "alpha": [
+   0,
+   255
+  ]
+ },
+ {
+  "id": "ornament-v-mid",
+  "source": "poster_0046_Layer-21-copy.png",
+  "file": "assets/ornament-v-mid.png",
+  "x": 107,
+  "y": 264,
+  "w": 865,
+  "h": 717,
+  "blend": "normal",
+  "role": "ornament",
+  "depth": -0.5,
+  "description": "Gold V, middle copy",
+  "mode": "RGBA",
+  "alpha": [
+   0,
+   255
+  ]
+ },
+ {
+  "id": "ornament-v-top",
+  "source": "poster_0045_Layer-21-copy-2.png",
+  "file": "assets/ornament-v-top.png",
+  "x": 156,
+  "y": 0,
+  "w": 818,
+  "h": 682,
+  "blend": "normal",
+  "role": "ornament",
+  "depth": -0.4,
+  "description": "Gold V, upper fragments",
+  "mode": "RGBA",
+  "alpha": [
+   0,
+   255
+  ]
+ },
+ {
+  "id": "glare-corner",
+  "source": "poster_0044_Layer-2-copy-2.png",
+  "file": "assets/glare-corner.png",
+  "x": 0,
+  "y": 0,
+  "w": 1080,
+  "h": 1350,
+  "blend": "screen",
+  "role": "glare",
+  "depth": -0.4,
+  "description": "Warm gold corner glow (Screen)",
+  "mode": "RGBA",
+  "alpha": [
+   15,
+   255
+  ]
+ },
+ {
+  "id": "glare-left",
+  "source": "poster_0043_Layer-2-copy-3.png",
+  "file": "assets/glare-left.png",
+  "x": 0,
+  "y": 0,
+  "w": 847,
+  "h": 1350,
+  "blend": "screen",
+  "role": "glare",
+  "depth": -0.3,
+  "description": "Gold glow, left edge (Screen)",
+  "mode": "RGBA",
+  "alpha": [
+   0,
+   255
+  ]
+ },
+ {
+  "id": "glare-bloom",
+  "source": "poster_0042_Layer-2-copy-6.png",
+  "file": "assets/glare-bloom.png",
+  "x": 0,
+  "y": 0,
+  "w": 1080,
+  "h": 1026,
+  "blend": "screen",
+  "role": "glare",
+  "depth": -0.3,
+  "description": "Large central gold bloom (Screen)",
+  "mode": "RGBA",
+  "alpha": [
+   0,
+   255
+  ]
+ },
+ {
+  "id": "portrait-host",
+  "source": "poster_0038_Layer-3-copy.png",
+  "file": "assets/portrait-host.png",
+  "x": 285,
+  "y": 156,
+  "w": 549,
+  "h": 991,
+  "blend": "normal",
+  "role": "portrait",
+  "depth": 0.0,
+  "description": "Host - Prophet Sampson Okyere (centre, top)",
+  "mode": "RGBA",
+  "alpha": [
+   0,
+   255
+  ]
+ },
+ {
+  "id": "portrait-top-right",
+  "source": "poster_0036_Layer-7.png",
+  "file": "assets/portrait-top-right.png",
+  "x": 678,
+  "y": 284,
+  "w": 396,
+  "h": 816,
+  "blend": "normal",
+  "role": "portrait",
+  "depth": 0.0,
+  "description": "Artiste, upper right",
+  "mode": "RGBA",
+  "alpha": [
+   0,
+   255
+  ]
+ },
+ {
+  "id": "portrait-top-left",
+  "source": "poster_0032_Layer-45.png",
+  "file": "assets/portrait-top-left.png",
+  "x": 0,
+  "y": 284,
+  "w": 434,
+  "h": 786,
+  "blend": "normal",
+  "role": "portrait",
+  "depth": 0.0,
+  "description": "Artiste, upper left",
+  "mode": "RGBA",
+  "alpha": [
+   0,
+   255
+  ]
+ },
+ {
+  "id": "fade-facets",
+  "source": "poster_0030_Layer-25-copy-2.png",
+  "file": "assets/fade-facets.png",
+  "x": 0,
+  "y": 0,
+  "w": 1079,
+  "h": 1350,
+  "blend": "normal",
+  "role": "fade",
+  "depth": 0.1,
+  "description": "White facet fade that tucks the back row",
+  "mode": "RGBA",
+  "alpha": [
+   0,
+   255
+  ]
+ },
+ {
+  "id": "fade-white",
+  "source": "poster_0029_Color-Fill-3.png",
+  "file": "assets/fade-white.png",
+  "x": 0,
+  "y": 0,
+  "w": 1079,
+  "h": 1350,
+  "blend": "normal",
+  "role": "fade",
+  "depth": 0.1,
+  "description": "White fade over the back row",
+  "mode": "RGBA",
+  "alpha": [
+   0,
+   255
+  ]
+ },
+ {
+  "id": "portrait-lower-left",
+  "source": "poster_0027_Layer-9.png",
+  "file": "assets/portrait-lower-left.png",
+  "x": 82,
+  "y": 549,
+  "w": 314,
+  "h": 551,
+  "blend": "normal",
+  "role": "portrait",
+  "depth": 0.2,
+  "description": "Artiste, lower left",
+  "mode": "RGBA",
+  "alpha": [
+   0,
+   255
+  ]
+ },
+ {
+  "id": "portrait-lower-right",
+  "source": "poster_0026_Layer-13.png",
+  "file": "assets/portrait-lower-right.png",
+  "x": 686,
+  "y": 539,
+  "w": 327,
+  "h": 533,
+  "blend": "normal",
+  "role": "portrait",
+  "depth": 0.2,
+  "description": "Artiste, lower right",
+  "mode": "RGBA",
+  "alpha": [
+   0,
+   255
+  ]
+ },
+ {
+  "id": "glare-centre",
+  "source": "poster_0024_Layer-2-copy-5.png",
+  "file": "assets/glare-centre.png",
+  "x": 528,
+  "y": 577,
+  "w": 403,
+  "h": 404,
+  "blend": "screen",
+  "role": "glare",
+  "depth": 0.2,
+  "description": "Gold glow behind lower-centre artiste (Screen)",
+  "mode": "RGBA",
+  "alpha": [
+   0,
+   255
+  ]
+ },
+ {
+  "id": "portrait-lower-centre",
+  "source": "poster_0022_Layer-43.png",
+  "file": "assets/portrait-lower-centre.png",
+  "x": 396,
+  "y": 577,
+  "w": 352,
+  "h": 773,
+  "blend": "normal",
+  "role": "portrait",
+  "depth": 0.3,
+  "description": "Artiste, lower centre",
+  "mode": "RGBA",
+  "alpha": [
+   0,
+   255
+  ]
+ },
+ {
+  "id": "glare-choir",
+  "source": "poster_0021_Layer-2-copy-7.png",
+  "file": "assets/glare-choir.png",
+  "x": 239,
+  "y": 809,
+  "w": 676,
+  "h": 541,
+  "blend": "screen",
+  "role": "glare",
+  "depth": 0.3,
+  "description": "Gold glow behind choir (Screen)",
+  "mode": "RGBA",
+  "alpha": [
+   0,
+   255
+  ]
+ },
+ {
+  "id": "choir",
+  "source": "poster_0020_Layer-11.png",
+  "file": "assets/choir.png",
+  "x": 204,
+  "y": 803,
+  "w": 681,
+  "h": 404,
+  "blend": "normal",
+  "role": "choir",
+  "depth": 0.4,
+  "description": "Heavenly Royals choir (six singers)",
+  "mode": "RGBA",
+  "alpha": [
+   0,
+   255
+  ]
+ },
+ {
+  "id": "fade-bottom",
+  "source": "poster_0018_Gradient-Fill-1.png",
+  "file": "assets/fade-bottom.png",
+  "x": 0,
+  "y": 679,
+  "w": 1080,
+  "h": 671,
+  "blend": "normal",
+  "role": "fade",
+  "depth": 0.4,
+  "description": "White gradient fading the lower flyer",
+  "mode": "RGBA",
+  "alpha": [
+   0,
+   255
+  ]
+ },
+ {
+  "id": "text-inhouse",
+  "source": "poster_0017_Layer-47.png",
+  "file": "assets/text-inhouse.png",
+  "x": 31,
+  "y": 158,
+  "w": 306,
+  "h": 83,
+  "blend": "normal",
+  "role": "text",
+  "depth": 0.8,
+  "description": "IN-HOUSE ARTISTES list",
+  "mode": "RGBA",
+  "alpha": [
+   0,
+   255
+  ]
+ },
+ {
+  "id": "text-guest",
+  "source": "poster_0016_Layer-46.png",
+  "file": "assets/text-guest.png",
+  "x": 772,
+  "y": 153,
+  "w": 240,
+  "h": 87,
+  "blend": "normal",
+  "role": "text",
+  "depth": 0.8,
+  "description": "GUEST ARTISTES list",
+  "mode": "RGBA",
+  "alpha": [
+   0,
+   255
+  ]
+ },
+ {
+  "id": "logo-ppmi",
+  "source": "poster_0014_Layer-31.png",
+  "file": "assets/logo-ppmi.png",
+  "x": 60,
+  "y": 32,
+  "w": 289,
+  "h": 54,
+  "blend": "normal",
+  "role": "logo",
+  "depth": 0.8,
+  "description": "Prayer Paradigm Ministry International logo + name",
+  "mode": "RGBA",
+  "alpha": [
+   0,
+   255
+  ]
+ },
+ {
+  "id": "text-host",
+  "source": "poster_0011_Layer-49.png",
+  "file": "assets/text-host.png",
+  "x": 407,
+  "y": 91,
+  "w": 266,
+  "h": 57,
+  "blend": "normal",
+  "role": "text",
+  "depth": 0.8,
+  "description": "HOST PROPH. SAMPSON OKYERE",
+  "mode": "RGBA",
+  "alpha": [
+   0,
+   255
+  ]
+ },
+ {
+  "id": "title",
+  "source": "poster_0008_Layer-24.png",
+  "file": "assets/title.png",
+  "x": 181,
+  "y": 1040,
+  "w": 742,
+  "h": 126,
+  "blend": "normal",
+  "role": "title",
+  "depth": 0.9,
+  "description": "\"SACRIFICE OF PRAISE\" + gold \"'26\"",
+  "mode": "RGBA",
+  "alpha": [
+   0,
+   255
+  ]
+ },
+ {
+  "id": "text-theme",
+  "source": "poster_0007_Layer-26.png",
+  "file": "assets/text-theme.png",
+  "x": 182,
+  "y": 1183,
+  "w": 723,
+  "h": 40,
+  "blend": "normal",
+  "role": "text",
+  "depth": 0.8,
+  "description": "THEME: PRAISE IN ADVANCE | 1 CHRONICLES 20:21",
+  "mode": "RGBA",
+  "alpha": [
+   0,
+   255
+  ]
+ },
+ {
+  "id": "logo-sop",
+  "source": "poster_0006_Layer-17.png",
+  "file": "assets/logo-sop.png",
+  "x": 885,
+  "y": 12,
+  "w": 134,
+  "h": 74,
+  "blend": "normal",
+  "role": "logo",
+  "depth": 0.9,
+  "description": "Gold SOP monogram",
+  "mode": "RGBA",
+  "alpha": [
+   0,
+   255
+  ]
+ },
+ {
+  "id": "text-details",
+  "source": "poster_0005_Layer-28.png",
+  "file": "assets/text-details.png",
+  "x": 176,
+  "y": 1252,
+  "w": 744,
+  "h": 64,
+  "blend": "normal",
+  "role": "text",
+  "depth": 0.8,
+  "description": "Date / time / venue / contact row",
+  "mode": "RGBA",
+  "alpha": [
+   0,
+   255
+  ]
+ },
+ {
+  "id": "harp-left",
+  "source": "poster_0004_Layer-30.png",
+  "file": "assets/harp-left.png",
+  "x": 0,
+  "y": 993,
+  "w": 140,
+  "h": 357,
+  "blend": "normal",
+  "role": "harp",
+  "depth": 1.0,
+  "description": "Gold harp, left",
+  "mode": "RGBA",
+  "alpha": [
+   0,
+   255
+  ]
+ },
+ {
+  "id": "harp-right",
+  "source": "poster_0002_Layer-30-copy.png",
+  "file": "assets/harp-right.png",
+  "x": 962,
+  "y": 975,
+  "w": 118,
+  "h": 375,
+  "blend": "normal",
+  "role": "harp",
+  "depth": 1.0,
+  "description": "Gold harp, right",
+  "mode": "RGBA",
+  "alpha": [
+   0,
+   255
+  ]
+ },
+ {
+  "id": "glare-harp-left",
+  "source": "poster_0001_Layer-2-copy-9.png",
+  "file": "assets/glare-harp-left.png",
+  "x": 0,
+  "y": 1010,
+  "w": 414,
+  "h": 340,
+  "blend": "screen",
+  "role": "glare",
+  "depth": 0.9,
+  "description": "Gold glow, lower left (Screen)",
+  "mode": "RGBA",
+  "alpha": [
+   0,
+   254
+  ]
+ },
+ {
+  "id": "glare-harp-right",
+  "source": "poster_0000_Layer-2-copy-10.png",
+  "file": "assets/glare-harp-right.png",
+  "x": 722,
+  "y": 1049,
+  "w": 358,
+  "h": 301,
+  "blend": "screen",
+  "role": "glare",
+  "depth": 0.9,
+  "description": "Gold glow, lower right (Screen)",
+  "mode": "RGBA",
+  "alpha": [
+   0,
+   249
+  ]
+ }
+]

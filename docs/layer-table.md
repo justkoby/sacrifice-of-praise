@@ -1,0 +1,36 @@
+| # | id | source file | x,y | size | blend | role | alpha range |
+|---|---|---|---|---|---|---|---|
+| 1 | `bg-base` | `poster_0051_Background.png` | 0,0 | 1080×1350 | normal | background | 255–255 |
+| 2 | `bg-silk` | `poster_0050_Layer-14.png` | 0,0 | 1080×1350 | multiply | background | 215–255 |
+| 3 | `bg-facets` | `poster_0049_Layer-25.png` | 0,0 | 1080×1350 | normal | background | 195–255 |
+| 4 | `bg-tint` | `poster_0048_Color-Fill-1.png` | 0,0 | 1080×1350 | multiply | background | 255–255 |
+| 5 | `ornament-v-main` | `poster_0047_Layer-21.png` | 97,280 | 867×718 | normal | ornament | 0–255 |
+| 6 | `ornament-v-mid` | `poster_0046_Layer-21-copy.png` | 107,264 | 865×717 | normal | ornament | 0–255 |
+| 7 | `ornament-v-top` | `poster_0045_Layer-21-copy-2.png` | 156,0 | 818×682 | normal | ornament | 0–255 |
+| 8 | `glare-corner` | `poster_0044_Layer-2-copy-2.png` | 0,0 | 1080×1350 | screen | glare | 15–255 |
+| 9 | `glare-left` | `poster_0043_Layer-2-copy-3.png` | 0,0 | 847×1350 | screen | glare | 0–255 |
+| 10 | `glare-bloom` | `poster_0042_Layer-2-copy-6.png` | 0,0 | 1080×1026 | screen | glare | 0–255 |
+| 11 | `portrait-host` | `poster_0038_Layer-3-copy.png` | 285,156 | 549×991 | normal | portrait | 0–255 |
+| 12 | `portrait-top-right` | `poster_0036_Layer-7.png` | 678,284 | 396×816 | normal | portrait | 0–255 |
+| 13 | `portrait-top-left` | `poster_0032_Layer-45.png` | 0,284 | 434×786 | normal | portrait | 0–255 |
+| 14 | `fade-facets` | `poster_0030_Layer-25-copy-2.png` | 0,0 | 1079×1350 | normal | fade | 0–255 |
+| 15 | `fade-white` | `poster_0029_Color-Fill-3.png` | 0,0 | 1079×1350 | normal | fade | 0–255 |
+| 16 | `portrait-lower-left` | `poster_0027_Layer-9.png` | 82,549 | 314×551 | normal | portrait | 0–255 |
+| 17 | `portrait-lower-right` | `poster_0026_Layer-13.png` | 686,539 | 327×533 | normal | portrait | 0–255 |
+| 18 | `glare-centre` | `poster_0024_Layer-2-copy-5.png` | 528,577 | 403×404 | screen | glare | 0–255 |
+| 19 | `portrait-lower-centre` | `poster_0022_Layer-43.png` | 396,577 | 352×773 | normal | portrait | 0–255 |
+| 20 | `glare-choir` | `poster_0021_Layer-2-copy-7.png` | 239,809 | 676×541 | screen | glare | 0–255 |
+| 21 | `choir` | `poster_0020_Layer-11.png` | 204,803 | 681×404 | normal | choir | 0–255 |
+| 22 | `fade-bottom` | `poster_0018_Gradient-Fill-1.png` | 0,679 | 1080×671 | normal | fade | 0–255 |
+| 23 | `text-inhouse` | `poster_0017_Layer-47.png` | 31,158 | 306×83 | normal | text | 0–255 |
+| 24 | `text-guest` | `poster_0016_Layer-46.png` | 772,153 | 240×87 | normal | text | 0–255 |
+| 25 | `logo-ppmi` | `poster_0014_Layer-31.png` | 60,32 | 289×54 | normal | logo | 0–255 |
+| 26 | `text-host` | `poster_0011_Layer-49.png` | 407,91 | 266×57 | normal | text | 0–255 |
+| 27 | `title` | `poster_0008_Layer-24.png` | 181,1040 | 742×126 | normal | title | 0–255 |
+| 28 | `text-theme` | `poster_0007_Layer-26.png` | 182,1183 | 723×40 | normal | text | 0–255 |
+| 29 | `logo-sop` | `poster_0006_Layer-17.png` | 885,12 | 134×74 | normal | logo | 0–255 |
+| 30 | `text-details` | `poster_0005_Layer-28.png` | 176,1252 | 744×64 | normal | text | 0–255 |
+| 31 | `harp-left` | `poster_0004_Layer-30.png` | 0,993 | 140×357 | normal | harp | 0–255 |
+| 32 | `harp-right` | `poster_0002_Layer-30-copy.png` | 962,975 | 118×375 | normal | harp | 0–255 |
+| 33 | `glare-harp-left` | `poster_0001_Layer-2-copy-9.png` | 0,1010 | 414×340 | screen | glare | 0–254 |
+| 34 | `glare-harp-right` | `poster_0000_Layer-2-copy-10.png` | 722,1049 | 358×301 | screen | glare | 0–249 |
