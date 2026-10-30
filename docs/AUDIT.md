@@ -75,3 +75,11 @@ The seven exported glare layers are reused as the bloom / ambient lighting; they
 | **31.14** | 15σ | complete flyer – light sweep, slow push-in and parallax begin |
 | 33 → 54 | | glints on 36.86, 39.82, 43.47, 45.30, 47.11, 51.64 (≈ 22 s of readable hold) |
 | 54.78 | final hit | closing glint, parallax settles back to the exact original layout |
+
+## Final quality check (draft 1 export)
+`out/sacrifice-of-praise-26.mp4` — H.264 High / yuv420p, 1080×1350, 30 fps, 1698 frames, 56.60 s, AAC-LC stereo (git-ignored; regenerate with `npm run export`).
+* Black frames: none (darkest frame mean luma 210/255).
+* Harsh cuts: none (largest frame-to-frame change 2.8 at frame 0; 99th percentile 0.44; no frame exceeded 6).
+* Final composition with the camera scale removed vs `final flyer.jpg`: mean abs diff **0.0042** (JPEG-level; all portraits, text, logos, harps present, no clipping). With the 1.4 % slow push-in applied the render is that same layout scaled about the centre; the top logos stay inside the frame.
+* Checked by eye at keyframes: no overlapping/mispositioned layers; the "'26" transient blur is the only soft frame (0.35 s, by design).
+* Not verified: playback sync was checked only through the preview's audio clock and the frame-exact cue times, not by ear.

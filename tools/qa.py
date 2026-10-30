@@ -17,9 +17,9 @@ last = subprocess.run(['ffmpeg', '-v', 'error', '-sseof', '-0.1', '-i', mp4, '-f
 import io
 a = np.asarray(Image.open(io.BytesIO(last)).convert('RGB'), float)
 ref = Image.open('final flyer.jpg').convert('RGB')
-s = 1.0  # final camera scale is 1.014 – crop the render back to the flyer frame
-cs = 1.014; cw, ch = W / cs, H / cs
-a_c = Image.fromarray(a.astype('uint8')).crop(((W - cw) / 2, (H - ch) / 2, (W + cw) / 2, (H + ch) / 2)).resize((W, H), Image.LANCZOS)
-diff = np.abs(np.asarray(a_c, float) - np.asarray(ref, float)) / 255
-print('final frame vs final flyer.jpg (camera scale undone): mean abs diff %.4f, p99 %.3f' % (diff.mean(), np.percentile(diff, 99)))
-a_c.save('docs/qa-final-frame.png')
+cs = 1.014  # final camera scale: scale the reference up about the centre to match the render
+rw, rh = W * cs, H * cs
+ref_s = ref.resize((round(rw), round(rh)), Image.LANCZOS).crop(((rw - W) / 2, (rh - H) / 2, (rw + W) / 2, (rh + H) / 2))
+diff = np.abs(a - np.asarray(ref_s, float)) / 255
+print('final frame vs final flyer.jpg (reference scaled by final camera scale): mean abs diff %.4f, p99 %.3f' % (diff.mean(), np.percentile(diff, 99)))
+Image.fromarray(a.astype('uint8')).save('docs/qa-final-frame.png')
