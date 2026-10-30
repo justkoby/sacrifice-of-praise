@@ -83,8 +83,8 @@ export function buildTimeline(root: HTMLElement): gsap.core.Timeline {
   wipe(slice('text-theme:badge'), C.themeBadge, 'inset(0% 100% 0% 0%)', { dur: 0.8 });
   wipe(slice('text-theme:text'), C.themeText, 'inset(0% 100% 0% 0%)', { dur: 1.3 });
   const row = (name: string, cue: number) => {
-    wipe(slice(`text-details:${name}`), cue, 'inset(0% 100% 0% 0%)', { dur: 0.95 });
-    tl.fromTo(simg(`text-details:${name}`), { y: 14 }, { y: 0, duration: 0.95, ease: E.out }, cue - lead);
+    wipe(slice(`text-details:${name}`), cue, 'inset(0% 100% 0% 0%)', { dur: 0.75 });
+    tl.fromTo(simg(`text-details:${name}`), { y: 14 }, { y: 0, duration: 0.75, ease: E.out }, cue - lead);
   };
   row('date', C.date); row('time', C.time); row('venue', C.venue); row('info', C.contact);
 

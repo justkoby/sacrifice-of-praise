@@ -2,12 +2,12 @@ import { useCallback, useEffect, useLayoutEffect, useRef, useState } from 'react
 import { Stage } from './components/Stage';
 import { Controls } from './components/Controls';
 import { Player } from './engine/player';
-import { DURATION, FPS, HEIGHT, WIDTH } from './config/timing';
+import { AUDIO_FADE, DURATION, FPS, HEIGHT, WIDTH } from './config/timing';
 
 const params = new URLSearchParams(location.search);
 const RENDER = params.has('render');
 
-declare global { interface Window { __ready?: Promise<void>; __seek?: (t: number) => void; __meta?: { duration: number; fps: number } } }
+declare global { interface Window { __ready?: Promise<void>; __seek?: (t: number) => void; __meta?: { duration: number; fps: number; audioFade: number } } }
 
 export default function App() {
   const stageRef = useRef<HTMLDivElement>(null);
@@ -25,7 +25,7 @@ export default function App() {
     player.current.seek(t0); setTime(t0);
     // expose a deterministic frame API for the exporter
     window.__seek = (t) => player.current!.seek(t);
-    window.__meta = { duration: DURATION, fps: FPS };
+    window.__meta = { duration: DURATION, fps: FPS, audioFade: AUDIO_FADE };
     window.__ready = Promise.all(Array.from(stageRef.current!.querySelectorAll('img')).map((i) => i.decode().catch(() => undefined))).then(() => undefined);
     return () => { player.current = null; };
   }, []);
@@ -45,6 +45,7 @@ export default function App() {
       if (playingRef.current) {
         const t = Math.min(a.currentTime, DURATION);
         player.current?.seek(t); setTime(t);
+        a.volume = Math.min(1, Math.max(0, (DURATION - t) / AUDIO_FADE)); // same fade-out as the export
         if (a.ended || t >= DURATION) { playingRef.current = false; setPlaying(false); }
       }
       raf = requestAnimationFrame(loop);
@@ -59,7 +60,7 @@ export default function App() {
     playingRef.current = true; setPlaying(true);
   }, []);
   const pause = useCallback(() => { audioRef.current!.pause(); playingRef.current = false; setPlaying(false); }, []);
-  const scrub = useCallback((t: number) => { audioRef.current!.currentTime = t; player.current?.seek(t); setTime(t); }, []);
+  const scrub = useCallback((t: number) => { audioRef.current!.volume = Math.min(1, Math.max(0, (DURATION - t) / AUDIO_FADE)); audioRef.current!.currentTime = t; player.current?.seek(t); setTime(t); }, []);
   const replay = useCallback(() => { scrub(0); void play(); }, [scrub, play]);
 
   useEffect(() => {

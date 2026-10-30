@@ -1,6 +1,6 @@
 # Sacrifice of Praise 26 – Cinematic Motion Flyer (first draft)
 
-Prayer Paradigm Ministry International · 1080 × 1350 · 30 fps · 56.6 s · soundtrack: `audio/*.mp3`
+Prayer Paradigm Ministry International · 1080 × 1350 · 30 fps · **30 s** (≈20 s build + ≈10 s held ending) · soundtrack: first 30 s of `audio/*.mp3`, 3 s fade-out. The earlier 56.6 s cut is in git history (`e02ab97`).
 
 React + Vite + GSAP. The flyer is rebuilt from the original 34 PSD layers (positions, stacking and blend modes
 verified against `final flyer.jpg`), animated on a single deterministic timeline synchronised to the supplied MP3.
@@ -17,7 +17,7 @@ Preview controls: **Play / Pause** (Space), **Replay**, **timeline scrubber** (�
 ## Export MP4 (H.264 + AAC)
 ```bash
 npm run build
-npm run export                                   # → out/sacrifice-of-praise-26.mp4
+npm run export                                   # → out/sacrifice-of-praise-26.mp4 (use --out to rename)
 npm run export -- --crf 16 --workers 2           # options: --out --workers --crf --preset --from --to (frames)
 ```
 Needs `ffmpeg` and Chromium (Playwright's; set `CHROMIUM_PATH=/path/to/chrome` if it isn't installed – `npx playwright-core install chromium`).

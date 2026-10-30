@@ -42,7 +42,7 @@ const launchOpts = process.env.CHROMIUM_PATH ? { executablePath: process.env.CHR
 const browser = await chromium.launch(launchOpts);
 const probe = await browser.newPage({ viewport: { width: 1080, height: 1350 } });
 await probe.goto(url); await probe.evaluate(() => window.__ready);
-const { duration, fps } = await probe.evaluate(() => window.__meta);
+const { duration, fps, audioFade } = await probe.evaluate(() => window.__meta);
 await probe.close();
 const total = Math.round(duration * fps);
 const from = +arg('from', 0), to = Math.min(+arg('to', total), total);
@@ -75,7 +75,7 @@ const mp3 = path.join(dist, 'assets/soundtrack.mp3');
 const vlen = (to - from) / fps;
 const mux = spawnSync('ffmpeg', ['-v', 'error', '-y', '-f', 'concat', '-safe', '0', '-i', path.join(tmp, 'list.txt'),
   '-ss', String(from / fps), '-i', mp3, '-map', '0:v', '-map', '1:a', '-c:v', 'copy',
-  '-af', `afade=t=out:st=${Math.max(0, vlen - 0.3).toFixed(2)}:d=0.3`, '-c:a', 'aac', '-b:a', '192k', '-ar', '44100',
+  '-af', `afade=t=out:st=${Math.max(0, vlen - audioFade).toFixed(2)}:d=${audioFade}`, '-c:a', 'aac', '-b:a', '192k', '-ar', '44100',
   '-t', vlen.toFixed(3), '-movflags', '+faststart', out], { stdio: 'inherit' });
 if (mux.status !== 0) process.exit(mux.status);
 fs.rmSync(tmp, { recursive: true, force: true });

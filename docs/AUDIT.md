@@ -83,3 +83,6 @@ The seven exported glare layers are reused as the bloom / ambient lighting; they
 * Final composition with the camera scale removed vs `final flyer.jpg`: mean abs diff **0.0042** (JPEG-level; all portraits, text, logos, harps present, no clipping). With the 1.4 % slow push-in applied the render is that same layout scaled about the centre; the top logos stay inside the frame.
 * Checked by eye at keyframes: no overlapping/mispositioned layers; the "'26" transient blur is the only soft frame (0.35 s, by design).
 * Not verified: playback sync was checked only through the preview's audio clock and the frame-exact cue times, not by ear.
+
+## 30-second edit (draft 2)
+Requested: cut to 30 s with the final composition holding ≈10 s. Build runs 0 – 19.7 s on the strongest accents (4.28 host · 8.60 · 10.41 · 13.76 gold "'26" · 19.47 last details), then the complete flyer is held 19.7 – 30 s with glints, shimmer, slow drift and parallax. Audio = first 30 s of the MP3 with a 3 s fade-out. Cue map: `src/config/timing.ts`. QA (`tools/qa.py`): 900 frames, no black frames, no cuts > 6 (max 2.8 at frame 0, the first frame), 99th pct 0.82.
